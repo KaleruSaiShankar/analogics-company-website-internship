@@ -5,6 +5,7 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaArrowLeft, FaCheckCircle, FaDownload } from 'react-icons/fa';
+import { getImagePath } from '../utils/getImagePath';
 import TypeWriter from '../components/TypeWriter/TypeWriter';
 import { solutions, solutionCategories } from '../data/solutions';
 import './ProductDetail.css';
@@ -77,7 +78,7 @@ const SolutionDetail = () => {
             >
               <div className="product-detail__image">
                 {solution.image ? (
-                  <img src={solution.image} alt={solution.name} />
+                  <img src={getImagePath(solution.image)} alt={solution.name} />
                 ) : (
                   <div
                     style={{
@@ -157,7 +158,7 @@ const SolutionDetail = () => {
             >
               <h2>Key Features of MDM</h2>
               <div className="mdms-key-features-image">
-                <img src={keyFeaturesImage} alt="Key Features of MDM" />
+                <img src={getImagePath(keyFeaturesImage)} alt="Key Features of MDM" />
               </div>
             </motion.div>
           )}
@@ -396,7 +397,7 @@ const SolutionDetail = () => {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
                   >
-                    <img src={screenshot.image} alt={screenshot.title} />
+                    <img src={getImagePath(screenshot.image)} alt={screenshot.title} />
                     <h3>{screenshot.title}</h3>
                     <p>{screenshot.description}</p>
                   </motion.div>
