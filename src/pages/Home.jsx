@@ -5,6 +5,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getImagePath } from '../utils/getImagePath';
 import {
   FaBolt,
   FaWifi,
@@ -101,22 +102,22 @@ const Home = () => {
               {/* Top Row - 2 images */}
               <div className="welcome__images-row welcome__images-row--top">
                 <div className="welcome__image">
-                  <img src="/images/about-1.jpg" alt="Biometric Attendance System" className="welcome__img" />
+                  <img src={getImagePath('/images/about-1.jpg')} alt="Biometric Attendance System" className="welcome__img" />
                 </div>
                 <div className="welcome__image">
-                  <img src="/images/about-2.jpg" alt="Handheld Device Manufacturing" className="welcome__img" />
+                  <img src={getImagePath('/images/about-2.jpg')} alt="Handheld Device Manufacturing" className="welcome__img" />
                 </div>
               </div>
               {/* Bottom Row - 3 images */}
               <div className="welcome__images-row welcome__images-row--bottom">
                 <div className="welcome__image">
-                  <img src="/images/about-3.jpg" alt="Field Operations" className="welcome__img" />
+                  <img src={getImagePath('/images/about-3.jpg')} alt="Field Operations" className="welcome__img" />
                 </div>
                 <div className="welcome__image">
-                  <img src="/images/about-4.jpg" alt="Component Assembly" className="welcome__img" />
+                  <img src={getImagePath('/images/about-4.jpg')} alt="Component Assembly" className="welcome__img" />
                 </div>
                 <div className="welcome__image">
-                  <img src="/images/about-5.jpg" alt="PCB Manufacturing" className="welcome__img" />
+                  <img src={getImagePath('/images/about-5.jpg')} alt="PCB Manufacturing" className="welcome__img" />
                 </div>
               </div>
             </motion.div>
@@ -217,7 +218,7 @@ const Home = () => {
           >
             <div className="launch-news__image-wrap">
               <img
-                src="/images/products/ultrasonic-water-meter.jpg"
+                src={getImagePath('/images/products/ultrasonic-water-meter.jpg')}
                 alt="Ultrasonic Water Meter"
                 className="launch-news__image"
               />

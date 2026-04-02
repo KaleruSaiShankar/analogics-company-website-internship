@@ -13,6 +13,7 @@ import {
   FaShieldAlt,
   FaPlug
 } from 'react-icons/fa';
+import { getImagePath } from '../../utils/getImagePath';
 import './Header.css';
 
 const productMenuItems = [
@@ -52,7 +53,7 @@ const Header = () => {
         <nav className="nav">
           {/* Logo */}
           <Link to="/" className="logo">
-            <img src="/logo.png" alt="Analogics - Redefining Technologies" className="logo__image" />
+            <img src={getImagePath('/logo.png')} alt="Analogics - Redefining Technologies" className="logo__image" />
           </Link>
 
           {/* Desktop Navigation */}

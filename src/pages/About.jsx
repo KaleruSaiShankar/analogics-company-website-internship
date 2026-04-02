@@ -4,6 +4,7 @@
 
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { getImagePath } from '../utils/getImagePath';
 import {
   FaCheckCircle,
   FaBullseye,
@@ -151,22 +152,22 @@ const About = () => {
               {/* Top Row - 2 images */}
               <div className="overview__images-row overview__images-row--top">
                 <div className="overview__image-item">
-                  <img src="/images/about-1.jpg" alt="Biometric Attendance System" className="overview__img" />
+                  <img src={getImagePath('/images/about-1.jpg')} alt="Biometric Attendance System" className="overview__img" />
                 </div>
                 <div className="overview__image-item">
-                  <img src="/images/about-2.jpg" alt="Handheld Device Manufacturing" className="overview__img" />
+                  <img src={getImagePath('/images/about-2.jpg')} alt="Handheld Device Manufacturing" className="overview__img" />
                 </div>
               </div>
               {/* Bottom Row - 3 images */}
               <div className="overview__images-row overview__images-row--bottom">
                 <div className="overview__image-item">
-                  <img src="/images/about-3.jpg" alt="Field Operations" className="overview__img" />
+                  <img src={getImagePath('/images/about-3.jpg')} alt="Field Operations" className="overview__img" />
                 </div>
                 <div className="overview__image-item">
-                  <img src="/images/about-4.jpg" alt="Component Assembly" className="overview__img" />
+                  <img src={getImagePath('/images/about-4.jpg')} alt="Component Assembly" className="overview__img" />
                 </div>
                 <div className="overview__image-item">
-                  <img src="/images/about-5.jpg" alt="PCB Manufacturing" className="overview__img" />
+                  <img src={getImagePath('/images/about-5.jpg')} alt="PCB Manufacturing" className="overview__img" />
                 </div>
               </div>
             </motion.div>
@@ -238,7 +239,7 @@ const About = () => {
               transition={{ delay: 0.1 }}
             >
               <div className="company__logo">
-                <img src="/images/c2p-logo.png" alt="C2P Logo" />
+                <img src={getImagePath('/images/c2p-logo.png')} alt="C2P Logo" />
               </div>
               <h3 className="company__name">C2P Engineering Solutions Pvt Ltd.</h3>
               <p className="company__description">
@@ -255,7 +256,7 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               <div className="company__logo">
-                <img src="/images/secure-data-logo.png" alt="Secure Data Products Logo" />
+                <img src={getImagePath('/images/secure-data-logo.png')} alt="Secure Data Products Logo" />
               </div>
               <h3 className="company__name">Secure Data Products</h3>
               <p className="company__description">
@@ -288,7 +289,7 @@ const About = () => {
               transition={{ delay: 0.1 }}
             >
               <div className="production__image">
-                <img src="/images/production-unit-1.jpg" alt="Production Unit 1" />
+                <img src={getImagePath('/images/production-unit-1.jpg')} alt="Production Unit 1" />
               </div>
               <div className="production__info">
                 <h3>Production Unit - I</h3>
@@ -304,7 +305,7 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               <div className="production__image">
-                <img src="/images/production-unit-2.jpg" alt="Production Unit 2" />
+                <img src={getImagePath('/images/production-unit-2.jpg')} alt="Production Unit 2" />
               </div>
               <div className="production__info">
                 <h3>Production Unit - II</h3>
@@ -320,7 +321,7 @@ const About = () => {
               transition={{ delay: 0.3 }}
             >
               <div className="production__image">
-                <img src="/images/production-unit-3.jpg" alt="Production Unit 3" />
+                <img src={getImagePath('/images/production-unit-3.jpg')} alt="Production Unit 3" />
               </div>
               <div className="production__info">
                 <h3>Production Unit - III</h3>
@@ -336,7 +337,7 @@ const About = () => {
               transition={{ delay: 0.4 }}
             >
               <div className="production__image">
-                <img src="/images/production-unit-4.jpg" alt="Production Unit 4" />
+                <img src={getImagePath('/images/production-unit-4.jpg')} alt="Production Unit 4" />
               </div>
               <div className="production__info">
                 <h3>Production Unit - IV</h3>
@@ -372,7 +373,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
             >
-              <img src="/images/infrastructure-1.jpg" alt="Manufacturing Equipment 1" />
+              <img src={getImagePath('/images/infrastructure-1.jpg')} alt="Manufacturing Equipment 1" />
             </motion.div>
             <motion.div
               className="infrastructure__image"
@@ -381,7 +382,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.2 }}
             >
-              <img src="/images/infrastructure-2.jpg" alt="Manufacturing Equipment 2" />
+              <img src={getImagePath('/images/infrastructure-2.jpg')} alt="Manufacturing Equipment 2" />
             </motion.div>
             <motion.div
               className="infrastructure__image"
@@ -390,7 +391,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.3 }}
             >
-              <img src="/images/infrastructure-3.jpg" alt="Manufacturing Equipment 3" />
+              <img src={getImagePath('/images/infrastructure-3.jpg')} alt="Manufacturing Equipment 3" />
             </motion.div>
             <motion.div
               className="infrastructure__image"
@@ -399,7 +400,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.4 }}
             >
-              <img src="/images/infrastructure-4.jpg" alt="Manufacturing Equipment 4" />
+              <img src={getImagePath('/images/infrastructure-4.jpg')} alt="Manufacturing Equipment 4" />
             </motion.div>
             <motion.div
               className="infrastructure__image"
@@ -408,7 +409,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.5 }}
             >
-              <img src="/images/infrastructure-5.jpg" alt="Manufacturing Equipment 5" />
+              <img src={getImagePath('/images/infrastructure-5.jpg')} alt="Manufacturing Equipment 5" />
             </motion.div>
             <motion.div
               className="infrastructure__image"
@@ -417,7 +418,7 @@ const About = () => {
               viewport={{ once: true }}
               transition={{ delay: 0.6 }}
             >
-              <img src="/images/infrastructure-6.jpg" alt="Manufacturing Equipment 6" />
+              <img src={getImagePath('/images/infrastructure-6.jpg')} alt="Manufacturing Equipment 6" />
             </motion.div>
           </div>
         </div>
@@ -435,7 +436,7 @@ const About = () => {
               transition={{ delay: 0.1 }}
             >
               <div className="certification__logo-single">
-                <img src="/images/iso-9001-14001.png" alt="ISO 9001 & ISO 14001" />
+                <img src={getImagePath('/images/iso-9001-14001.png')} alt="ISO 9001 & ISO 14001" />
               </div>
               <div className="certification__text">
                 <p>ISO 9001:2008 certified company – Internationally recognized Quality Management System</p>
@@ -451,7 +452,7 @@ const About = () => {
               transition={{ delay: 0.2 }}
             >
               <div className="certification__logo-single">
-                <img src="/images/iso-27001.png" alt="ISO 27001" />
+                <img src={getImagePath('/images/iso-27001.png')} alt="ISO 27001" />
               </div>
               <div className="certification__text">
                 <p>ISO 27001 certified company - Internationally recognized Information Security Management System (ISMS)</p>
@@ -466,7 +467,7 @@ const About = () => {
               transition={{ delay: 0.3 }}
             >
               <div className="certification__logo-single">
-                <img src="/images/cmmi-level3.png" alt="CMMI Level 3" />
+                <img src={getImagePath('/images/cmmi-level3.png')} alt="CMMI Level 3" />
               </div>
               <div className="certification__text">
                 <p>CMMI Level 3 certified organization</p>
@@ -481,7 +482,7 @@ const About = () => {
               transition={{ delay: 0.4 }}
             >
               <div className="certification__logo-single">
-                <img src="/images/dsir.png" alt="DSIR" />
+                <img src={getImagePath('/images/dsir.png')} alt="DSIR" />
               </div>
               <div className="certification__text">
                 <p>DSIR recognized R&D centre – Highest recognition given by the Ministry of Science & Technology, India</p>

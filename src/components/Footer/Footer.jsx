@@ -12,6 +12,7 @@ import {
   FaMapMarkerAlt,
   FaChevronRight
 } from 'react-icons/fa';
+import { getImagePath } from '../../utils/getImagePath';
 import './Footer.css';
 
 const Footer = () => {
@@ -56,7 +57,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="footer__section footer__section--info">
             <Link to="/" className="footer__logo">
-              <img src="/logo.png" alt="Analogics - Redefining Technologies" className="footer__logo-image" />
+              <img src={getImagePath('/logo.png')} alt="Analogics - Redefining Technologies" className="footer__logo-image" />
             </Link>
             <p className="footer__description">
               We provide end-to-end technology solutions to various industry sectors 

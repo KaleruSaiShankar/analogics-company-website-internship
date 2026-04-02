@@ -5,6 +5,7 @@
 import { animate, motion, useMotionValue } from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import { FaTimes } from 'react-icons/fa';
+import { getImagePath } from '../../utils/getImagePath';
 import './ClientLogos.css';
 
 const clients = [
@@ -164,7 +165,7 @@ const ClientLogos = () => {
               >
                 <div className="clients__logo">
                   <img 
-                    src={client.logo} 
+                    src={getImagePath(client.logo)} 
                     alt={client.name}
                     onError={(e) => {
                       const item = e.target.closest('.clients__item');
