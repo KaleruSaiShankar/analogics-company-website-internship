@@ -8,5 +8,5 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
-    base: '/analogics-company-website-internship/',
+   base: '/analogics-company-website-internship/',
 })

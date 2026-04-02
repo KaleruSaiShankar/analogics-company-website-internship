@@ -4,6 +4,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaTimes, FaChevronRight } from 'react-icons/fa';
+import { getImagePath } from '../../utils/getImagePath';
 import './CaseStudyModal.css';
 
 const CaseStudyModal = ({ isOpen, onClose, caseStudy }) => {
@@ -51,7 +52,7 @@ const CaseStudyModal = ({ isOpen, onClose, caseStudy }) => {
                 <div className="case-modal__about-content">
                   {logo && (
                     <div className="case-modal__logo">
-                      <img src={logo} alt={`${title} logo`} />
+                      <img src={getImagePath(logo)} alt={`${title} logo`} />
                     </div>
                   )}
                   <div>

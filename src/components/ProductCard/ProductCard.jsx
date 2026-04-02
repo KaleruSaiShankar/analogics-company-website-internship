@@ -5,6 +5,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaArrowRight } from 'react-icons/fa';
+import { getImagePath } from '../../utils/getImagePath';
 import './ProductCard.css';
 
 const ProductCard = ({ product, index }) => {
@@ -19,7 +20,7 @@ const ProductCard = ({ product, index }) => {
     >
       <div className="product-card__image">
         <img
-          src={product.image}
+          src={getImagePath(product.image)}
           alt={product.name}
           className="product-card__img"
         />

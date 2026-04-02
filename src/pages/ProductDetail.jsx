@@ -5,6 +5,7 @@
 import { useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import { getImagePath } from '../utils/getImagePath';
 import {
     FaArrowLeft,
     FaCheckCircle,
@@ -102,7 +103,7 @@ const ProductDetail = () => {
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
                             <div className="product-detail__image">
-                                <img src={product.image} alt={product.name} />
+                                <img src={getImagePath(product.image)} alt={product.name} />
                             </div>
                         </motion.div>
 

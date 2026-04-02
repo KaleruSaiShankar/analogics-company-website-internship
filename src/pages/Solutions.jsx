@@ -5,6 +5,7 @@
 import { useState, useMemo, useEffect, useRef } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
+import { getImagePath } from '../utils/getImagePath';
 import { 
   FaBolt, 
   FaClock, 
@@ -80,7 +81,7 @@ const Solutions = () => {
       <div className="solution-card__image">
         {solution.image ? (
           <img
-            src={solution.image}
+            src={getImagePath(solution.image)}
             alt={solution.name}
             className="solution-card__img"
             loading="lazy"

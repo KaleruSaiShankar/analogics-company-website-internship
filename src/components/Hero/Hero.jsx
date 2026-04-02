@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { FaArrowRight, FaPlay } from 'react-icons/fa';
+import { getImagePath } from '../../utils/getImagePath';
 import './Hero.css';
 
 const slides = [
@@ -187,7 +188,7 @@ const Hero = () => {
                 transition={{ duration: 0.5 }}
               >
                 <img
-                  src={slides[currentSlide].image}
+                  src={getImagePath(slides[currentSlide].image)}
                   alt={slides[currentSlide].title}
                   className="hero__slide-image"
                 />
